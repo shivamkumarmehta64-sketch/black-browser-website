@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shivam's Apps — Free Desktop Apps & Browser</title>
 <meta name="description" content="Free, ad-free desktop apps by Shivam: Black browser, mtube (YouTube Music), ytube (YouTube), and more.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' https://api.github.com https://us.i.posthog.com https://*.posthog.com; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src https://api.github.com https://us.i.posthog.com https://*.posthog.com; base-uri 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' https://api.github.com https://us.i.posthog.com https://*.posthog.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src https://api.github.com https://us.i.posthog.com https://*.posthog.com; base-uri 'self'">
 <link rel="stylesheet" href="assets/tailwind.css">
 <link rel="icon" type="image/png" href="assets/black.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,7 @@
     api_host: 'https://us.i.posthog.com',
     disable_session_recording: true,
     capture_dead_clicks: false,
+    capture_heatmaps: false,
   });
 </script>
 <style>
