@@ -5,11 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shivam's Apps — Free Desktop Apps & Browser</title>
 <meta name="description" content="Free, ad-free desktop apps by Shivam: Black browser, mtube (YouTube Music), ytube (YouTube), and more.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' https://cdn.tailwindcss.com https://api.github.com; style-src 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src https://api.github.com; base-uri 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' https://cdn.tailwindcss.com https://api.github.com https://us.i.posthog.com https://*.posthog.com; style-src 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src https://api.github.com https://us.i.posthog.com https://*.posthog.com; base-uri 'self'">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="icon" type="image/png" href="assets/black.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  posthog.init('phc_kVSLe9S9kJvDtkdZh4PtzcvA93DLwcUa8E2odXrFsJpJ', { api_host: 'https://us.i.posthog.com' });
+</script>
 <style>
   body { font-family: 'Inter', system-ui, sans-serif; }
   .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.10); }
@@ -37,8 +41,8 @@
       <span class="font-bold text-white tracking-tight">Shivam's <span class="text-grad">Apps</span></span>
     </a>
     <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-300">
-      <a href="#black" class="hover:text-white transition">Black Browser</a>
-      <a href="#apps" class="hover:text-white transition">Apps</a>
+      <a href="#black" class="hover:text-white transition">Apps</a>
+      <a href="#apps" class="hover:text-white transition">All apps</a>
       <a href="#features" class="hover:text-white transition">Features</a>
     </nav>
     <a href="https://github.com/shivamkumarmehta64-sketch" target="_blank" rel="noopener"
@@ -65,41 +69,43 @@
       <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">₹0 forever</span>
     </div>
     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="#black" class="w-full sm:w-auto text-center px-8 py-3.5 rounded-2xl font-semibold text-white bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 shadow-lg shadow-indigo-500/30 transition">Get the Browser</a>
+      <a href="#black" class="w-full sm:w-auto text-center px-8 py-3.5 rounded-2xl font-semibold text-white bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 shadow-lg shadow-indigo-500/30 transition">Get the Apps</a>
       <a href="#apps" class="w-full sm:w-auto text-center px-8 py-3.5 rounded-2xl font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/10 transition">Browse all apps</a>
     </div>
   </div>
 </section>
 
-<!-- FEATURED: BLACK -->
+<!-- FEATURED: THE APPS -->
 <section id="black" class="px-4 pb-14 scroll-mt-28">
   <div class="glass max-w-6xl mx-auto rounded-3xl p-6 sm:p-10 card-hover">
     <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-      <img src="assets/black.png" alt="Black browser logo" class="w-36 h-36 sm:w-44 sm:h-44 rounded-3xl shadow-2xl shadow-indigo-500/20 ring-1 ring-white/10">
+      <div class="flex -space-x-4">
+        <img src="assets/ytube.png" alt="ytube logo" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl ring-2 ring-indigo-500/40">
+        <img src="assets/mtube.png" alt="mtube logo" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl ring-2 ring-cyan-500/40">
+      </div>
       <div class="flex-1 text-center lg:text-left">
         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Black Browser</h2>
-          <span id="black-version" class="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/15 text-cyan-300 border border-cyan-400/20">…</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">ytube <span class="text-slate-500">+</span> mtube</h2>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20">LIVE</span>
         </div>
         <p class="mt-3 text-slate-400 max-w-xl mx-auto lg:mx-0">
-          The Dark Browser — Fast. Private. Secure. A premium glassmorphic desktop browser built with Electron & Chromium for power users.
+          Two working desktop apps — an ad-free YouTube (ytube) and an ad-free YouTube Music (mtube). Lightweight WebView2 builds with SponsorBlock, media keys, Picture-in-Picture and a tight RAM budget. No Electron, no bloat.
         </p>
         <div class="mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
-          <a id="black-win-btn" href="https://github.com/shivamkumarmehta64-sketch/Black/releases" target="_blank" rel="noopener"
-             class="w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 shadow-lg shadow-indigo-500/25 transition">⬇️ Download for Windows</a>
-          <a id="black-linux-btn" href="https://github.com/shivamkumarmehta64-sketch/Black/releases" target="_blank" rel="noopener"
-             class="w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/10 transition">🐧 Linux — Coming Soon</a>
-          <a href="https://github.com/shivamkumarmehta64-sketch/Black" target="_blank" rel="noopener"
-             class="w-full sm:w-auto px-6 py-3 rounded-xl text-sm text-slate-300 hover:text-white border border-transparent hover:border-white/20 transition">View source ↗</a>
+          <a href="https://github.com/shivamkumarmehta64-sketch/ytube/releases" target="_blank" rel="noopener"
+             class="w-full sm:w-auto text-center px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-400 hover:to-cyan-400 shadow-lg shadow-indigo-500/25 transition">⬇️ Download ytube</a>
+          <a href="https://github.com/shivamkumarmehta64-sketch/mtube/releases" target="_blank" rel="noopener"
+             class="w-full sm:w-auto text-center px-6 py-3 rounded-xl font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/10 transition">⬇️ Download mtube</a>
+          <a href="https://github.com/shivamkumarmehta64-sketch/Black-Browser" target="_blank" rel="noopener"
+             class="w-full sm:w-auto text-center px-6 py-3 rounded-xl text-sm text-slate-300 hover:text-white border border-transparent hover:border-white/20 transition">Black Browser (C#) ↗</a>
         </div>
-        <p id="black-meta" class="mt-3 text-xs text-slate-500"></p>
         <div class="mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs">
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Ad-blocking</span>
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Glass UI</span>
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Tab sleeping</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">SponsorBlock</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Media keys</span>
           <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Picture-in-Picture</span>
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Password manager</span>
-          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Site Advisor</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Audio-only mode</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">Low RAM</span>
+          <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">No Electron</span>
         </div>
       </div>
     </div>
@@ -242,8 +248,6 @@
   const FALLBACK = (repo) => `https://github.com/${repo}/releases`;
 
   const config = [
-    { repo: 'shivamkumarmehta64-sketch/Black', versionEl: 'black-version', metaEl: 'black-meta',
-      buttons: { win: { el: 'black-win-btn', exts: ['.exe', '.msi', '.zip'] }, linux: { el: 'black-linux-btn', exts: ['.appimage', '.deb', '.rpm', '.tar.gz', '.tar.xz'] } } },
     { repo: 'shivamkumarmehta64-sketch/mtube', versionEl: 'mtube-version', btn: 'mtube-btn', exts: ['.exe', '.zip'] },
     { repo: 'shivamkumarmehta64-sketch/ytube', versionEl: 'ytube-version', btn: 'ytube-btn', exts: ['.exe', '.zip'] },
     { repo: 'shivamkumarmehta64-sketch/Electronics_Calculator', versionEl: 'calc-version', btn: 'calc-btn', exts: ['.apk'], linkOnly: true },
