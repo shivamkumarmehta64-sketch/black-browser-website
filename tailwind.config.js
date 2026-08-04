@@ -1,7 +1,16 @@
 module.exports = {
-  content: ['./index.html'],
+  content: ['./index.html', './apps.html', './about.html', './download.html', './releases.html', './privacy.html', './app/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        indigo: {
+          950: '#1e1b4b',
+        },
+      },
+    },
   },
   plugins: [],
 }
