@@ -40,6 +40,11 @@
 
 <!-- HERO -->
 <section class="relative overflow-hidden pt-24 pb-12 px-4 text-center">
+  <div class="cine-hero" aria-hidden="true">
+    <div class="cine-kb"></div>
+    <div class="cine-shade"></div>
+    <div class="cine-parts" id="cine-parts"></div>
+  </div>
   <div class="blob blob-1" data-parallax="0.18"></div>
   <div class="blob blob-2" data-parallax="-0.12"></div>
   <div class="blob blob-3" data-parallax="0.3"></div>
@@ -49,7 +54,7 @@
         <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Free · Open Source · No ads
       </span>
     </div>
-    <h1 class="text-5xl sm:text-6xl md:text-8xl font-black text-white tracking-tight leading-tight">
+    <h1 class="cine-hero-title text-5xl sm:text-6xl md:text-8xl font-black text-white tracking-tight leading-tight">
       Fast, private apps that<br class="hidden sm:block"> <span class="text-grad">just work.</span>
     </h1>
     <p class="mt-6 text-lg text-slate-400 max-w-xl mx-auto">
@@ -302,7 +307,26 @@
 </footer>
 
 <script src="assets/app.js"></script>
+<script>
+(function () {
+  var box = document.getElementById('cine-parts');
+  if (!box) return;
+  var count = window.innerWidth < 600 ? 18 : 32;
+  for (var i = 0; i < count; i++) {
+    var p = document.createElement('div');
+    p.className = 'cine-particle';
+    var s = Math.random() * 4 + 2;
+    p.style.width = s + 'px';
+    p.style.height = s + 'px';
+    p.style.left = (Math.random() * 100) + '%';
+    p.style.animationDuration = (Math.random() * 9 + 6) + 's';
+    p.style.animationDelay = (Math.random() * 9) + 's';
+    box.appendChild(p);
+  }
+})();
+</script>
 </body>
+
 </html>
 
 

@@ -326,3 +326,42 @@ html.lenis, html.lenis body { height: auto; }
   0% { opacity: 1; transform: scale(1); }
   100% { opacity: 0; transform: scale(1.9); }
 }
+
+/* ---------- Cinematic anime hero ---------- */
+.cine-hero { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.cine-kb {
+  position: absolute; inset: -5%;
+  background-image: url('../assets/wallpapers/bleach.png');
+  background-size: cover;
+  background-position: center;
+  animation: cineZoom 26s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.cine-shade {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(2,6,23,0.35), rgba(2,6,23,0.9)),
+    linear-gradient(to right, rgba(2,6,23,0.55), transparent 70%);
+}
+.cine-parts { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.cine-particle {
+  position: absolute;
+  bottom: -12px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, #a5b4fc, #22d3ee 55%, transparent 72%);
+  opacity: 0;
+  animation: cineParticle linear infinite;
+}
+.cine-hero-title {
+  text-shadow: 0 0 40px rgba(99, 102, 241, 0.45), 0 0 80px rgba(34, 211, 238, 0.25);
+}
+@keyframes cineZoom {
+  0%   { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.12) translate(1.5%, -2%); }
+}
+@keyframes cineParticle {
+  0%   { transform: translateY(0) scale(0.35); opacity: 0; }
+  12%  { opacity: 0.75; }
+  80%  { opacity: 0.4; }
+  100% { transform: translateY(-108vh) scale(1); opacity: 0; }
+}
