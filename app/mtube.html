@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>mtube — Ad-Free YouTube Music for Windows | Shivam's Apps</title>
+<title>mtube â€” Ad-Free YouTube Music for Windows | Shivam's Apps</title>
 <meta name="description" content="Download mtube: a free, ad-free YouTube Music desktop client for Windows. Background playback, SponsorBlock, media keys, audio-only mode. No Electron, low RAM.">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://api.github.com https://us.i.posthog.com https://*.posthog.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.github.com https://us.i.posthog.com https://*.posthog.com; base-uri 'self'">
 <link rel="stylesheet" href="../assets/tailwind.css">
@@ -25,13 +25,14 @@
     </a>
     <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
       <a href="/" class="hover:text-white transition">Home</a>
-      <a href="/apps.html" class="text-white">Apps</a>
+      <a href="/apps.html" class="text-white" aria-current="page">Apps</a>
+      <a href="/achievements.html" class="hover:text-white transition">Achievements</a>
+      <a href="/history.html" class="hover:text-white transition">History</a>
       <a href="/releases.html" class="hover:text-white transition">Releases</a>
       <a href="/about.html" class="hover:text-white transition">About</a>
-      <a href="/download.html" class="hover:text-white transition">Download</a>
       <a href="/privacy.html" class="hover:text-white transition">FAQ</a>
       <a href="/birthday.html" class="hover:text-white transition">??</a>
-    </nav>
+</nav>
     <a href="https://github.com/shivamkumarmehta64-sketch" target="_blank" rel="noopener"
        class="text-sm px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 transition">GitHub</a>
   </nav>
@@ -39,23 +40,23 @@
 
 <!-- HERO -->
 <section data-repo="shivamkumarmehta64-sketch/mtube" class="relative overflow-hidden pt-16 pb-12 px-4">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
+  <div class="blob blob-1" data-parallax="0.18"></div>
+  <div class="blob blob-2" data-parallax="-0.12"></div>
   <div class="fade-up max-w-4xl mx-auto text-center relative">
     <img src="../assets/mtube.png" alt="mtube logo" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl ring-2 ring-cyan-500/40 mx-auto">
     <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
       <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">mtube</h1>
       <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/20">LIVE</span>
-      <span data-version="shivamkumarmehta64-sketch/mtube" class="text-sm font-semibold px-3 py-1 rounded-full bg-white/5 border border-white/10 text-cyan-300">…</span>
+      <span data-version="shivamkumarmehta64-sketch/mtube" class="text-sm font-semibold px-3 py-1 rounded-full bg-white/5 border border-white/10 text-cyan-300">â€¦</span>
     </div>
     <p class="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
-      An ad-free YouTube Music desktop client for Windows. Background playback, SponsorBlock, media keys and an audio-only mode — all in a lightweight WebView2 build. Free, forever.
+      An ad-free YouTube Music desktop client for Windows. Background playback, SponsorBlock, media keys and an audio-only mode â€” all in a lightweight WebView2 build. Free, forever.
     </p>
-    <div class="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs"><span class="stat-chip">? <span data-stat="stars" class="k">�</span></span><span class="stat-chip">?? <span data-stat="lang">�</span></span><span class="stat-chip">?? <span data-stat="updated">�</span></span></div><div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+    <div class="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs"><span class="stat-chip">? <span data-stat="stars" class="k">…</span></span><span class="stat-chip">?? <span data-stat="lang">…</span></span><span class="stat-chip">?? <span data-stat="updated">…</span></span></div><div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
       <a data-download="shivamkumarmehta64-sketch/mtube" data-exts=".zip,.exe" href="https://github.com/shivamkumarmehta64-sketch/mtube/releases" target="_blank" rel="noopener"
-         class="w-full sm:w-auto text-center px-8 py-3.5 btn-primary text-base">⬇️ Download mtube</a>
+         class="w-full sm:w-auto text-center px-8 py-3.5 btn-primary text-base">â¬‡ï¸ Download mtube</a>
       <a href="https://github.com/shivamkumarmehta64-sketch/mtube" target="_blank" rel="noopener"
-         class="w-full sm:w-auto text-center px-8 py-3.5 btn-ghost text-base">View source ↗</a>
+         class="w-full sm:w-auto text-center px-8 py-3.5 btn-ghost text-base">View source â†—</a>
     </div>
   </div>
 </section>
@@ -64,34 +65,34 @@
 <section class="px-4 pb-16">
   <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
     <div class="glass rounded-2xl p-6 card-hover reveal">
-      <div class="text-2xl mb-3">🚫</div>
+      <div class="text-2xl mb-3">ðŸš«</div>
       <h5 class="font-semibold text-white">Ad-free by default</h5>
       <p class="mt-1.5 text-sm text-slate-400">Built-in SponsorBlock skips sponsors, intros and self-promo segments automatically.</p>
     </div>
     <div class="glass rounded-2xl p-6 card-hover reveal">
-      <div class="text-2xl mb-3">▶️</div>
+      <div class="text-2xl mb-3">â–¶ï¸</div>
       <h5 class="font-semibold text-white">Background playback</h5>
-      <p class="mt-1.5 text-sm text-slate-400">Music keeps playing even when the window is minimized — just like a real music app.</p>
+      <p class="mt-1.5 text-sm text-slate-400">Music keeps playing even when the window is minimized â€” just like a real music app.</p>
     </div>
     <div class="glass rounded-2xl p-6 card-hover reveal">
-      <div class="text-2xl mb-3">🎹</div>
+      <div class="text-2xl mb-3">ðŸŽ¹</div>
       <h5 class="font-semibold text-white">Media keys</h5>
       <p class="mt-1.5 text-sm text-slate-400">Play, pause, next and previous right from your keyboard or media controls.</p>
     </div>
     <div class="glass rounded-2xl p-6 card-hover reveal">
-      <div class="text-2xl mb-3">🎧</div>
+      <div class="text-2xl mb-3">ðŸŽ§</div>
       <h5 class="font-semibold text-white">Audio-only mode</h5>
       <p class="mt-1.5 text-sm text-slate-400">Save bandwidth and RAM by turning off video rendering entirely.</p>
     </div>
     <div class="glass rounded-2xl p-6 card-hover reveal">
-      <div class="text-2xl mb-3">📺</div>
+      <div class="text-2xl mb-3">ðŸ“º</div>
       <h5 class="font-semibold text-white">Picture-in-Picture</h5>
       <p class="mt-1.5 text-sm text-slate-400">Float the video on top of any other window while you keep working.</p>
     </div>
     <div class="glass rounded-2xl p-6 card-hover reveal">
-      <div class="text-2xl mb-3">🪶</div>
+      <div class="text-2xl mb-3">ðŸª¶</div>
       <h5 class="font-semibold text-white">Lightweight</h5>
-      <p class="mt-1.5 text-sm text-slate-400">WebView2-based — no Electron, a tight RAM budget, fast startup.</p>
+      <p class="mt-1.5 text-sm text-slate-400">WebView2-based â€” no Electron, a tight RAM budget, fast startup.</p>
     </div>
   </div>
 </section>
@@ -114,7 +115,7 @@
   <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
     <div class="flex items-center gap-2.5">
       <img src="../assets/black.png" alt="Logo" class="w-7 h-7 rounded-lg">
-      <span class="text-sm text-slate-400">© 2026 Shivam Kumar Mehta. Built with ❤️ — free forever.</span>
+      <span class="text-sm text-slate-400">Â© 2026 Shivam Kumar Mehta. Built with â¤ï¸ â€” free forever.</span>
     </div>
     <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm">
       <a href="/apps.html" class="text-slate-400 hover:text-white transition">Apps</a>
@@ -123,10 +124,11 @@
       <a href="/releases.html" class="text-slate-400 hover:text-white transition">Releases</a>
       <a href="/privacy.html" class="text-slate-400 hover:text-white transition">Privacy & FAQ</a>
     </div>
-    <a href="https://github.com/shivamkumarmehta64-sketch" target="_blank" rel="noopener" class="text-sm text-indigo-300 hover:text-indigo-200 transition">GitHub profile ↗</a>
+    <a href="https://github.com/shivamkumarmehta64-sketch" target="_blank" rel="noopener" class="text-sm text-indigo-300 hover:text-indigo-200 transition">GitHub profile â†—</a>
   </div>
 </footer>
 
 <script src="../assets/app.js"></script>
 </body>
 </html>
+
